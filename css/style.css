@@ -1,0 +1,251 @@
+body {
+    padding: 0;
+    overflow: hidden;
+    font-family: colfax, helvetica, arial, sans-serif;
+    margin:0
+}
+
+.map {
+    position: absolute;
+    right: 0px;
+    width: calc(100% - 24%);
+    height: 100%;
+    top: 46px;
+    z-index: -1;
+    height: calc(100% - 46px)
+}
+
+.sidebar {
+    position: absolute;
+    left: 0px;
+    width: 24%;
+    top: 46px;
+    bottom: 0;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: normal;
+    color: #666;
+    margin-top: 10px,
+}
+
+.slidecontainer{
+    padding: 10px;
+}
+
+
+
+.street-selected path {
+  -webkit-animation: active 5s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes active {
+    0% {opacity: 1;}
+    50% {opacity: 1; stroke-width: 10;}
+    100% {opacity: 1;}
+}
+
+#reset {
+  margin-top:10px;
+}
+
+.slider {
+  position:relative;
+  width:100px;
+}
+
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+
+.resetButton{
+  position:absolute;
+  right: 30px;
+  bottom: 30px;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size:15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #2fbbb2;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px #228b84;
+}
+
+.resetButton:hover {background-color: #6fd1a5}
+
+.resetButton:active {
+  background-color: #f1b733;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*Cards*/
+.card {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background-color: rgba(233,199,75,0.8);
+  display: grid;
+  font-family: 'Trebuchet MS', sans-serif;
+  padding: 18px;
+  font-size: 12px;
+}
+
+.card1 {
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: grid;
+  font-family: 'Trebuchet MS', sans-serif;
+  padding: 18px;
+  font-size: 12px;
+}
+.card2 {
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: grid;
+  font-family: 'Trebuchet MS', sans-serif;
+  padding: 18px;
+  font-size: 12px;
+}
+.card3 {
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: grid;
+  font-family: 'Trebuchet MS', sans-serif;
+  padding: 18px;
+  font-size: 12px;
+}
+
+.card4 {
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: grid;
+  font-family: 'Trebuchet MS', sans-serif;
+  padding: 18px;
+  font-size: 12px;
+}
+
+
+
+/*Top Navigator*/
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.8) 100%),url("https://cdn.pixabay.com/photo/2016/11/22/20/01/abstract-1850416_960_720.jpg");
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #487270;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #1c5b57;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.dropdown:hover .dropbtn {
+  background-color: #f0c541;
+  color:white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+/* Alert Box* /
+/* The alert message box */
+.alert {
+  position: relative;
+  left:24%;
+  width:76%;
+  padding: 20px;
+  background-color: white;
+  color: #23685f;
+  text-align: center;
+  font-family: 'Trebuchet MS', sans-serif;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+
+.learnMore{
+  color: #404040;
+}
+
+
+.changeAGroup {
+  padding: 4px;
+  background-color: white;
+  color: #404040;
+  border: 2px solid #e7e7e7;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  position: relative;
+  left: 20%;
+}
+
+.changeAGroup:hover {
+  background-color: #f1b733; /* Green */
+  color: white;
+}
